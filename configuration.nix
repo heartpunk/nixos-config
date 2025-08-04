@@ -104,6 +104,8 @@
     tailscale
     htop
     git
+    caffeine-ng                     # the little coffee-cup app
+    gnomeExtensions.appindicator    # restores AppIndicator / legacy tray icons
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -138,4 +140,9 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  environment.variables.EDITOR = "vim";
+
+  # GNOME needs dconf for any per-user shell tweaks
+  programs.dconf.enable = true;
+
 }
