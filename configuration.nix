@@ -86,6 +86,7 @@
       atuin
       chromium
       claude-code
+      claude-squad
     #  thunderbird
     ];
   };
