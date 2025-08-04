@@ -87,6 +87,7 @@
       chromium
       claude-code
       claude-squad
+      tmux
     #  thunderbird
     ];
   };
