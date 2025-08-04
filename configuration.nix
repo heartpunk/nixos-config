@@ -133,4 +133,5 @@
   services.tailscale.enable = true;
   programs.mosh.enable = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nixpkgs.config.allowUnfree = true;
 }
