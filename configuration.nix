@@ -83,6 +83,9 @@
     description = "Sophie Smithburg";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
+      atuin
+      chromium
+      claude-code
     #  thunderbird
     ];
   };
