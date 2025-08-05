@@ -149,6 +149,6 @@
 
   services.versions.perUserServices.heartpunk = {
     enable = true;
-    watchPaths = ["/home/heartpunk/code" "/etc/nixos"];
+    watchPaths = ["/home/heartpunk/code" "/etc/nixos" "/home/heartpunk/.claude-squad/worktrees"];
   };
 }
