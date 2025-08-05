@@ -178,16 +178,16 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1754340296,
-        "narHash": "sha256-VJkgkYKMkQ6PyVJkFGMUvhrbbTFgzsNS0fO/p2OT02U=",
+        "lastModified": 1754424988,
+        "narHash": "sha256-8akBcoRNIPzLOtsaQIuRLsMTBRa3zkeVFqih3bgnF+k=",
         "owner": "heartpunk",
         "repo": "versions",
-        "rev": "b363e4b38262e48dc6495baad60e1590815a9413",
+        "rev": "8534e402dba2f9045e9bc03c63dd951358f33dfb",
         "type": "github"
       },
       "original": {
         "owner": "heartpunk",
-        "ref": "good-enough-for-government-work",
+        "ref": "barely-bureaucratically-blessed",
         "repo": "versions",
         "type": "github"
       }

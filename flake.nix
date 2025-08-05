@@ -13,7 +13,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    versions.url = "github:heartpunk/versions/good-enough-for-government-work";
+    versions.url = "github:heartpunk/versions/barely-bureaucratically-blessed";
   };
 
   outputs = { self, nixpkgs, lix-module, nixpkgs-claude-squad, versions, ... }:
