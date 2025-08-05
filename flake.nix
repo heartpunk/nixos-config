@@ -12,9 +12,11 @@
       url = "github:benjaminkitt/nixpkgs?ref=add-claude-squad";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    versions.url = "github:heartpunk/versions/good-enough-for-government-work";
   };
 
-  outputs = { self, nixpkgs, lix-module, nixpkgs-claude-squad, ... }:
+  outputs = { self, nixpkgs, lix-module, nixpkgs-claude-squad, versions, ... }:
     let
       system = "x86_64-linux";
 
@@ -43,6 +45,8 @@
           ({ ... }: {
             nixpkgs.overlays = [ overlay ];
           })
+
+	  versions.nixosModules.default
         ];
       };
     };

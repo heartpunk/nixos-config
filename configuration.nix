@@ -147,4 +147,8 @@
   # GNOME needs dconf for any per-user shell tweaks
   programs.dconf.enable = true;
 
+  services.versions.perUserServices.heartpunk = {
+    enable = true;
+    watchPaths = ["/home/heartpunk/code" "/etc/nixos"];
+  };
 }
