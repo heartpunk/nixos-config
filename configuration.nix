@@ -87,6 +87,7 @@
       chromium
       claude-code
       claude-squad
+      ghostty
       tmux
     #  thunderbird
     ];
