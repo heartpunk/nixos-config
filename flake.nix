@@ -14,9 +14,11 @@
     };
 
     versions.url = "github:heartpunk/versions/barely-bureaucratically-blessed";
+
+    claude-code-nix.url = "github:sadjow/claude-code-nix";
   };
 
-  outputs = { self, nixpkgs, lix-module, nixpkgs-claude-squad, versions, ... }:
+  outputs = { self, nixpkgs, lix-module, nixpkgs-claude-squad, versions, claude-code-nix, ... }:
     let
       system = "x86_64-linux";
 
@@ -48,6 +50,9 @@
 
 	  versions.nixosModules.default
         ];
+        specialArgs = {
+          inherit claude-code-nix;
+        };
       };
     };
 }

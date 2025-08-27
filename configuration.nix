@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, claude-code-nix, ... }:
 
 {
   imports =
@@ -85,7 +85,7 @@
     packages = with pkgs; [
       atuin
       chromium
-      claude-code
+      claude-code-nix.packages.x86_64-linux.claude-code
       claude-squad
       ghostty
       tmux
