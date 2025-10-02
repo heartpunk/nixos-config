@@ -15,7 +15,11 @@
 
     versions.url = "github:heartpunk/versions/barely-bureaucratically-blessed";
 
-    claude-code-nix.url = "github:sadjow/claude-code-nix";
+    claude-code-nix = {
+      url = "github:sadjow/claude-code-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
   };
 
   outputs = { self, nixpkgs, lix-module, nixpkgs-claude-squad, versions, claude-code-nix, ... }:

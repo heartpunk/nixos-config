@@ -3,14 +3,16 @@
     "claude-code-nix": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
-        "lastModified": 1756249307,
-        "narHash": "sha256-YJitdAhZwHd1bPVhxPK1AOW08H/AlzwrdWJGlU9b9W4=",
+        "lastModified": 1759435307,
+        "narHash": "sha256-2gJNbsQeVoWmJLfw39LcZv8BONNpH6TQIN/VvG61YvE=",
         "owner": "sadjow",
         "repo": "claude-code-nix",
-        "rev": "01ae1e0cd0fd3d1a95329459d11a9936da92f4d1",
+        "rev": "d17e648ef0f75efa3381b4a391d3ce8c7902d2a3",
         "type": "github"
       },
       "original": {
@@ -125,16 +127,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1756159630,
-        "narHash": "sha256-ohMvsjtSVdT/bruXf5ClBh8ZYXRmD4krmjKrXhEvwMg=",
+        "lastModified": 1754214453,
+        "narHash": "sha256-Q/I2xJn/j1wpkGhWkQnm20nShYnG7TI99foDBpXm1SY=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "84c256e42600cb0fdf25763b48d28df2f25a0c8b",
+        "rev": "5b09dc45f24cf32316283e62aec81ffee3c3e376",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixpkgs-unstable",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -171,27 +173,11 @@
         "type": "github"
       }
     },
-    "nixpkgs_3": {
-      "locked": {
-        "lastModified": 1754214453,
-        "narHash": "sha256-Q/I2xJn/j1wpkGhWkQnm20nShYnG7TI99foDBpXm1SY=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "5b09dc45f24cf32316283e62aec81ffee3c3e376",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "claude-code-nix": "claude-code-nix",
         "lix-module": "lix-module",
-        "nixpkgs": "nixpkgs_2",
+        "nixpkgs": "nixpkgs",
         "nixpkgs-claude-squad": "nixpkgs-claude-squad",
         "versions": "versions"
       }
@@ -244,7 +230,7 @@
     "versions": {
       "inputs": {
         "flake-utils": "flake-utils_3",
-        "nixpkgs": "nixpkgs_3"
+        "nixpkgs": "nixpkgs_2"
       },
       "locked": {
         "lastModified": 1754424988,
