@@ -108,6 +108,7 @@ services.desktopManager.gnome.enable = true;
     htop
     git
     ghostty
+    ghostty.terminfo
     caffeine-ng                     # the little coffee-cup app
     gnomeExtensions.appindicator    # restores AppIndicator / legacy tray icons
   ];
