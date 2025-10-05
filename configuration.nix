@@ -162,4 +162,15 @@ services.desktopManager.gnome.enable = true;
     enable = true;
     watchPaths = ["/home/heartpunk/code" "/etc/nixos" "/home/heartpunk/.claude-squad/worktrees"];
   };
+
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    localNetworkGameTransfers.openFirewall = true;
+  };
+
+  hardware.steam-hardware.enable = true;
+
+  hardware.graphics.enable = true;
+  hardware.graphics.enable32Bit = true;
 }
